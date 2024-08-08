@@ -3,11 +3,11 @@ def call(String mavenGoal){
      {
        sh "mvn clean"
      }
-  elseif ("${mavenGoal}" == "Test")
+  else if ("${mavenGoal}" == "Test")
   {
     sh "mvn test"
   }
-  elseif ("${mavenGoal}" == "Package")
+  else if ("${mavenGoal}" == "Package")
   {
     sh "mvn package"
   }
